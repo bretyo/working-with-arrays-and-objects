@@ -97,7 +97,7 @@ function double(obj){
 function secrets(obj){
   let str ="";
   for(let key in obj){
-    key.startsWith("sh") ? str+=obj[key] : null;
+    key.startsWith("sh") && (str+=obj[key]) ;
   }
   return str;
 }
